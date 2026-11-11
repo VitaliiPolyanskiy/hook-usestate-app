@@ -1,20 +1,53 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#root > div {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
 button {
-  width: 120px;
-  height: 36px;
-  border-radius: 4px;
-  margin: 20px;
+  width: 130px;
+  height: 44px;
+  border-radius: 8px;
+  margin: 10px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  transition: all 0.2s ease;
 }
 
 .on {
-  color: #666;
-  background-color: #ccc;
-  border: 3px #ccc inset;
+  color: white;
+  background-color: #10b981; /* Сучасний зелений */
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(2px);
 }
 
 .off {
-  color: #888;
-  background-color: white;
-  border: 3px #ccc outset;
+  color: #374151;
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.off:hover {
+  background-color: #f9fafb;
+  border-color: #9ca3af;
+}
+
+.off:active {
+  background-color: #e5e7eb;
 }

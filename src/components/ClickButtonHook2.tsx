@@ -8,13 +8,13 @@ interface State {
 export default function ClickButtonHook2() {
   const [state, setState] = useState<State>({
     classCSS: "off",
-    label: "Выключено"
+    label: "Вимкнено"
   });
 
   const press = () => {
     setState(prev => ({
       classCSS: prev.classCSS === "off" ? "on" : "off",
-      label: prev.label === "Выключено" ? "Включено" : "Выключено"
+      label: prev.label === "Вимкнено" ? "Увімкнено" : "Вимкнено"
     }));
   };
 
